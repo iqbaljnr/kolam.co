@@ -1,0 +1,160 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+    /* Elegant Minimalist Palette */
+    --color-brand-primary: #A63C3C;
+    /* Deep Brick Red */
+    --color-brand-hover: #8A2F2F;
+
+    --color-bg-body: #FFFFFF;
+    /* Pure White */
+    --color-bg-surface: #F9F9F9;
+    /* High-key light grey */
+    --color-bg-accent: #FDF5F5;
+
+    --color-text-main: #1a1a1a;
+    /* Soft Black */
+    --color-text-secondary: #555555;
+    /* Neutral Grey */
+    --color-text-light: #FFFFFF;
+    --color-text-inverse: #FFFFFF;
+
+    /* Typography - Editorial */
+    --font-main: 'Plus Jakarta Sans', sans-serif;
+
+    /* Spacing - More Air */
+    --spacing-sm: 1rem;
+    --spacing-md: 2.5rem;
+    --spacing-lg: 6rem;
+    --spacing-xl: 10rem;
+
+    /* UI */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    /* Sharper corners for elegance */
+    --radius-lg: 12px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg-body);
+    color: var(--color-text-main);
+    line-height: 1.7;
+    font-weight: 300;
+    /* Light by default */
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-main);
+    font-weight: 500;
+    /* Not too bold */
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+/* Utilities */
+.container {
+    max-width: 1400px;
+    /* Wide format */
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.section {
+    padding: var(--spacing-xl) 0;
+}
+
+/* Elegant Button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem 2.2rem;
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    /* Pill shape checks out for modern elegant */
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--color-brand-primary);
+    color: var(--color-text-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-brand-hover);
+    padding: 0.9rem 2.8rem;
+    /* Subtle expand effect */
+}
+
+/* Text Link Style Button */
+.link-arrow {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 0.2rem;
+}
+
+.link-arrow:hover {
+    color: var(--color-brand-primary);
+    padding-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+}
+
+/* Global Scroll Animations */
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+}
+
+.scroll-item.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger Delays */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
