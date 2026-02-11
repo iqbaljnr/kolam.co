@@ -10,7 +10,7 @@
           KOLAM.CO
         </h1>
         <p class="tagline">
-          Ruang Inspirasi & Kopi
+          coffee as art and food as memories
         </p>
       </div>
       

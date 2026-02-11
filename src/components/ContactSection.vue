@@ -19,7 +19,7 @@
             </div>
             <div class="content">
                 <h3>WhatsApp</h3>
-                <p>+62 812 3456 7890</p>
+                <p>+62 881 0365 19010</p>
             </div>
         </a>
 

@@ -65,7 +65,7 @@ const galleryItems = [
             <div class="story-point">
               <h3>Konsep Brand</h3>
               <p>
-                Kolam hadir sebagai oase. Mengusung "Minimalisme Modern", 
+                Kolam hadir sebagai oase. Mengusung "Cozy Hangout", 
                 kami menciptakan ruang yang tenang untuk jeda sejenak 
                 dari hiruk pikuk dunia luar.
               </p>
