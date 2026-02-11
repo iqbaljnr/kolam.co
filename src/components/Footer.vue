@@ -22,7 +22,7 @@
         </div>
         <div class="col">
           <h4>reservations</h4>
-          <p>+62 877-0477-1921</p>
+          <p>+62 881-0365-19010</p>
           <p>hello@kolam.co</p>
         </div>
         <div class="col">
