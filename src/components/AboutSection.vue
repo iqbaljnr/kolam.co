@@ -58,7 +58,7 @@ const galleryItems = [
       <div class="story-content">
         <div class="header-block scroll-item">
           <span class="eyebrow">OUR STORY</span>
-          <h2 class="title">Di Balik<br>Kolam.</h2>
+          <h2 class="title">Di Balik<br>Kolam.co</h2>
         </div>
 
         <div class="text-grid scroll-item delay-100">

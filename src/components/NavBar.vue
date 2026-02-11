@@ -39,7 +39,10 @@ onUnmounted(() => {
   <nav class="navbar" :class="{ 'scrolled': isScrolled, 'dark-mode': isDarkPage }">
     <div class="container navbar-content">
       <div class="logo">
-        <router-link to="/" @click="closeMenu">KOLAM.CO</router-link>
+        <router-link to="/" @click="closeMenu" class="logo-link">
+          <img src="@/assets/images/icon.png" alt="Kolam Icon" class="logo-icon" />
+          <span>KOLAM.CO</span>
+        </router-link>
       </div>
 
       <!-- Desktop Links -->
@@ -126,11 +129,20 @@ onUnmounted(() => {
 }
 
 .logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-family: var(--font-main);
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.logo-icon {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links {
