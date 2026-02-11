@@ -138,7 +138,7 @@
 
 @media (max-width: 768px) {
   .headline {
-    font-size: 4.5rem;
+    font-size: 3rem;
   }
   
   .hero-footer {

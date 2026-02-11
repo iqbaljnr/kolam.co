@@ -277,5 +277,12 @@ onUnmounted(() => {
   .navbar {
     padding: 1.5rem 0;
   }
+  .navbar:not(.scrolled) .logo a {
+    color: #fcfcfc !important; 
+  }
+
+  .navbar:not(.scrolled) .hamburger-line {
+    background-color: #fcfcfc !important;
+  }
 }
 </style>
